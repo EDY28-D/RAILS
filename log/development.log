@@ -1,0 +1,190 @@
+Config option :use_activesupport_time_zone is deprecated and should be removed from your config. It will always be true beginning in Mongoid 9.0.
+Started GET "/" for 127.0.0.1 at 2024-03-10 12:48:33 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/junior28/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/junior28/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 384)
+Completed 200 OK in 27ms (Views: 8.6ms | MongoDB: 0.0ms | Allocations: 7926)
+
+
+Started GET "/highLightTitle.png" for 127.0.0.1 at 2024-03-10 12:48:34 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/highLightTitle.png"):
+  
+Started GET "/users/65ede4f1c3894a08ee43c68e" for 127.0.0.1 at 2024-03-10 12:48:36 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"65ede4f1c3894a08ee43c68e"}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+MONGODB | Server ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 initializing.
+MONGODB | Server ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017 initializing.
+MONGODB | Server ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017,ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017,ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017,name=atlas-afzdms-shard-0] servers=[#<Server address=ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 UNKNOWN>,#<Server address=ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017 UNKNOWN>,#<Server address=ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 29.49 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017,ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017,ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017,name=atlas-afzdms-shard-0] servers=[#<Server address=ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 UNKNOWN>,#<Server address=ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017 UNKNOWN>,#<Server address=ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017 UNKNOWN>]>
+MONGODB | Server description for ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017 changed from 'unknown' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetNoPrimary' topology.
+MONGODB | Waiting for up to 29.27 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017,ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017,ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017,name=atlas-afzdms-shard-0] servers=[#<Server address=ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 UNKNOWN>,#<Server address=ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017 SECONDARY replica_set=atlas-afzdms-shard-0 pool=#<ConnectionPool size=0 (0-20) used=0 avail=0 pending=0 ready>>,#<Server address=ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017 UNKNOWN>]>
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'unknown' to 'primary'.
+MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+MONGODB | Waiting for up to 29.26 seconds for servers to be scanned: #<Cluster topology=ReplicaSetWithPrimary[ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017,ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017,ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017,name=atlas-afzdms-shard-0,v=4,e=7fffffff0000000000000060] servers=[#<Server address=ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 PRIMARY replica_set=atlas-afzdms-shard-0 pool=#<ConnectionPool size=0 (0-20) used=0 avail=0 pending=0 ready>>,#<Server address=ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017 SECONDARY replica_set=atlas-afzdms-shard-0 pool=#<ConnectionPool size=0 (0-20) used=0 avail=0 pending=0 ready>>,#<Server address=ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017 UNKNOWN>]>
+MONGODB | Server description for ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017 changed from 'unknown' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:10 conn:1:1 sconn:90720 | admin.saslStart | STARTED | {}
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:10 | admin.saslStart | SUCCEEDED | 0.132s
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:11 conn:1:1 sconn:90720 | admin.saslContinue | STARTED | {}
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:11 | admin.saslContinue | SUCCEEDED | 0.132s
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:12 conn:1:1 sconn:90720 | rails_development_mongo.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('65ede4f1c3894a08ee43c68e')}, "$db"=>"rails_development_mongo", "lsid"=>{"id"=><BSON::Binary:0x15880 type=uuid data=0x5189c2ea4ce84424...>}}
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:12 | rails_development_mongo.find | SUCCEEDED | 0.134s
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 1.3ms | Allocations: 671)
+  Rendered users/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4050)
+  Rendered layout layouts/application.html.erb (Duration: 204.4ms | Allocations: 74100)
+Completed 200 OK in 2184ms (Views: 206.3ms | MongoDB: 398.4ms | Allocations: 110617)
+
+
+Started GET "/users/highLightTitle.png" for 127.0.0.1 at 2024-03-10 12:48:38 -0500
+Processing by UsersController#show as PNG
+  Parameters: {"id"=>"highLightTitle"}
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:13 conn:1:1 sconn:90720 | rails_development_mongo.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>"highLightTitle"}, "$db"=>"rails_development_mongo", "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00007ff95b242550 @seconds=1710092917, @increment=5>, "signature"=>{"hash"=><BSON::Binary:0x16320 type=generic ...
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:13 | rails_development_mongo.find | SUCCEEDED | 0.133s
+Completed 404 Not Found in 136ms (MongoDB: 132.6ms | Allocations: 2592)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class User with id(s) highLightTitle.
+summary:
+  When calling User.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): highLightTitle ... (1 total) and the following ids were not found: highLightTitle.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/users_controller.rb:63:in `set_user'
+Started GET "/users/65ede4f1c3894a08ee43c68e/edit" for 127.0.0.1 at 2024-03-10 12:48:43 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"65ede4f1c3894a08ee43c68e"}
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:14 conn:1:1 sconn:90720 | rails_development_mongo.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('65ede4f1c3894a08ee43c68e')}, "$db"=>"rails_development_mongo", "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00007ff95b7b0988 @seconds=1710092918, @increment=4>, "signature"=>{"hash"=><BSON::Bi...
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:14 | rails_development_mongo.find | SUCCEEDED | 0.133s
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 19.1ms | Allocations: 7166)
+  Rendered users/edit.html.erb within layouts/application (Duration: 20.4ms | Allocations: 7511)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 8927)
+Completed 200 OK in 160ms (Views: 22.8ms | MongoDB: 133.0ms | Allocations: 11216)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-03-10 12:48:43 -0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:15 conn:1:1 sconn:90720 | rails_development_mongo.find | STARTED | {"find"=>"users", "filter"=>{}, "$db"=>"rails_development_mongo", "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00007ff95b019620 @seconds=1710092922, @increment=5>, "signature"=>{"hash"=><BSON::Binary:0x16840 type=generic data=0xfeec560767c1faad...
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:15 | rails_development_mongo.find | SUCCEEDED | 0.132s
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 126)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 120)
+  Rendered users/index.html.erb within layouts/application (Duration: 137.3ms | Allocations: 3000)
+  Rendered layout layouts/application.html.erb (Duration: 139.3ms | Allocations: 4301)
+Completed 200 OK in 141ms (Views: 7.5ms | MongoDB: 132.5ms | Allocations: 4719)
+
+
+Started GET "/users/65ede4f1c3894a08ee43c68e" for 127.0.0.1 at 2024-03-10 12:48:46 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"65ede4f1c3894a08ee43c68e"}
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:16 conn:1:1 sconn:90720 | rails_development_mongo.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('65ede4f1c3894a08ee43c68e')}, "$db"=>"rails_development_mongo", "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00007ff95b9d4b38 @seconds=1710092923, @increment=3>, "signature"=>{"hash"=><BSON::Bi...
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:16 | rails_development_mongo.find | SUCCEEDED | 0.133s
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 121)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 603)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1895)
+Completed 200 OK in 139ms (Views: 4.1ms | MongoDB: 132.7ms | Allocations: 3844)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-03-10 12:48:46 -0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.9ms | Allocations: 2936)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3140)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4436)
+Completed 200 OK in 9ms (Views: 8.7ms | MongoDB: 0.0ms | Allocations: 4822)
+
+
+MONGODB | Server description for ac-xzla5ue-shard-00-00.gv1wuas.mongodb.net:27017 changed from 'secondary' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-01.gv1wuas.mongodb.net:27017 changed from 'secondary' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+Started POST "/users" for 127.0.0.1 at 2024-03-10 12:49:28 -0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"code"=>"23", "name"=>"detz", "lastname"=>"tolentino", "country"=>"Perú", "city"=>"5", "username"=>"pezuñiga", "password"=>"[FILTERED]", "currency"=>"458", "balance"=>"78", "birthday"=>"2012-01-18", "email"=>"caterno99@gmail.com", "phone"=>"957357498", "platform"=>"yutu", "status"=>"activo"}, "commit"=>"Create User"}
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:32 conn:1:1 sconn:90720 | rails_development_mongo.find | STARTED | {"find"=>"users", "filter"=>{"platform"=>"yutu", "email"=>"caterno99@gmail.com"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"rails_development_mongo", "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00007ff95b9a46e0 @seconds=1710092926, @increm...
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:32 | rails_development_mongo.find | SUCCEEDED | 0.151s
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.5ms | Allocations: 3293)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3380)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4778)
+Completed 422 Unprocessable Entity in 163ms (Views: 8.0ms | MongoDB: 150.7ms | Allocations: 8032)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-03-10 12:49:37 -0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"code"=>"23", "name"=>"detz", "lastname"=>"tolentino", "country"=>"Perú", "city"=>"5", "username"=>"pezuñiga", "password"=>"[FILTERED]", "currency"=>"458", "balance"=>"78", "birthday"=>"2012-01-18", "email"=>"detz@gmail.com", "phone"=>"957357498", "platform"=>"yutu", "status"=>"activo"}, "commit"=>"Create User"}
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:33 conn:1:1 sconn:90720 | rails_development_mongo.find | STARTED | {"find"=>"users", "filter"=>{"platform"=>"yutu", "email"=>"detz@gmail.com"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"rails_development_mongo", "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00007ff95b84a948 @seconds=1710092967, @increment=1...
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:33 | rails_development_mongo.find | SUCCEEDED | 0.133s
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:34 conn:1:1 sconn:90720 | rails_development_mongo.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65edf2b1c3894a96053ed5ea'), "code"=>"23", "name"=>"detz", "lastname"=>"tolentino", "country"=>"Perú", "city"=>"5", "username"=>"pezuñiga", "password"=>"123456", "currency"=>"45...
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:34 | rails_development_mongo.insert | SUCCEEDED | 0.144s
+Redirected to http://127.0.0.1:3000/users/65edf2b1c3894a96053ed5ea
+Completed 302 Found in 285ms (MongoDB: 276.3ms | Allocations: 5181)
+
+
+Started GET "/users/65edf2b1c3894a96053ed5ea" for 127.0.0.1 at 2024-03-10 12:49:37 -0500
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"65edf2b1c3894a96053ed5ea"}
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:37 conn:1:1 sconn:90720 | rails_development_mongo.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('65edf2b1c3894a96053ed5ea')}, "$db"=>"rails_development_mongo", "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00007ff95b79c078 @seconds=1710092977, @increment=5>, "signature"=>{"hash"=><BSON::Bi...
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 req:37 | rails_development_mongo.find | SUCCEEDED | 0.134s
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 124)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 659)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1951)
+Completed 200 OK in 141ms (Views: 4.6ms | MongoDB: 133.5ms | Allocations: 6201)
+
+
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-xzla5ue-shard-00-02.gv1wuas.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
